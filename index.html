@@ -1,148 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ekam Rai — Drywall Installer & Finisher and Construction Worker portfolio.">
-<title>Ekam Rai | Drywall Installer & Finisher</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ekam Rai | Construction Portfolio</title>
 <style>
-:root{--dark:#171717;--dark2:#222;--yellow:#f5b400;--light:#f5f5f3;--white:#fff;--muted:#666;--line:#ddd}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:var(--white);line-height:1.6}
-.container{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;background:rgba(23,23,23,.97);border-bottom:1px solid #333}.nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:72px}
-.logo{font-family:Oswald,Arial;font-size:25px;letter-spacing:.5px;color:#fff;text-decoration:none}.logo span{color:var(--yellow)}
-nav a{color:#eee;text-decoration:none;margin-left:24px;font-size:14px;font-weight:600}nav a:hover{color:var(--yellow)}
-.hero{background:linear-gradient(110deg,#171717 0%,#252525 65%,#303030 100%);color:#fff;padding:100px 0 92px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-100px;top:-160px;width:420px;height:420px;border:80px solid rgba(245,180,0,.12);transform:rotate(20deg)}
-.eyebrow{color:var(--yellow);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px}.hero h1{font-family:Oswald,Arial;font-size:clamp(48px,8vw,88px);line-height:.98;text-transform:uppercase;margin:15px 0}.hero h2{font-size:clamp(20px,3vw,30px);font-weight:500;margin:0 0 18px}.hero p{max-width:680px;color:#d7d7d7;font-size:18px}.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;text-decoration:none;padding:13px 21px;font-weight:800;border-radius:3px}.btn-primary{background:var(--yellow);color:#171717}.btn-outline{border:1px solid #777;color:#fff}.btn-outline:hover{border-color:var(--yellow);color:var(--yellow)}
-section{padding:80px 0}.section-head{margin-bottom:36px}.section-head h2{font-family:Oswald;font-size:42px;text-transform:uppercase;margin:5px 0}.section-head p{color:var(--muted);max-width:720px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--light);border:1px solid #e6e6e6;padding:28px}.card h3{margin:0 0 8px;font-size:21px}.card p{color:#555}.tag{display:inline-block;background:#171717;color:#fff;padding:5px 9px;font-size:11px;font-weight:800;text-transform:uppercase;margin:4px 4px 0 0}
-.about{background:var(--light)}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:start}.check{display:flex;gap:12px;margin:12px 0}.check b{color:#171717}.check:before{content:"✓";font-weight:900;color:#171717;background:var(--yellow);width:23px;height:23px;display:inline-grid;place-items:center;border-radius:50%;flex:none}
-.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillbox{border-left:4px solid var(--yellow);padding:18px 20px;background:#fff}.skillbox h3{margin:0 0 10px;font-size:18px}
-.cert{display:flex;align-items:center;gap:18px;padding:20px;background:#fff;border:1px solid var(--line);margin-bottom:14px}.cert-icon{width:48px;height:48px;background:var(--yellow);display:grid;place-items:center;font-weight:900;font-size:20px}.cert h3{margin:0}.cert p{margin:2px 0 0;color:#666}
-.projects{grid-template-columns:repeat(2,1fr)}.project{border:1px solid var(--line);background:#fff;overflow:hidden}.project-media{height:250px;background:#e9e9e7;display:grid;place-items:center;color:#777;text-align:center;padding:25px}.project-media strong{display:block;color:#444;font-size:18px}.project-body{padding:25px}.project-body h3{font-size:25px;margin:0 0 7px}.project-body p{color:#555}.placeholder{border:2px dashed #bbb;padding:35px;width:100%}
-.contact{background:#171717;color:#fff}.contact p{color:#ccc}.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-item{border-top:1px solid #444;padding:18px 0}.contact-item small{display:block;color:#aaa;text-transform:uppercase;letter-spacing:1px;font-weight:800}.contact-item a{color:#fff;text-decoration:none;font-size:19px}.contact-item a:hover{color:var(--yellow)}
-footer{background:#111;color:#888;text-align:center;padding:25px;font-size:13px}.note{font-size:13px;color:#777;margin-top:20px}
-@media(max-width:800px){nav{display:none}.hero{padding:75px 0}.grid,.projects,.about-grid,.contact-box{grid-template-columns:1fr}.skills{grid-template-columns:1fr}section{padding:60px 0}}
+:root{--dark:#151515;--yellow:#f5b400;--light:#f5f5f2;--muted:#666;--line:#ddd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);line-height:1.6}
+.wrap{width:min(1120px,92%);margin:auto}.top{position:sticky;top:0;z-index:20;background:#151515;border-bottom:1px solid #333}
+.top .wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:24px;font-weight:900;color:#fff;text-decoration:none}.logo span,.eyebrow{color:var(--yellow)}
+nav a{color:#eee;text-decoration:none;font-size:13px;font-weight:800;margin-left:22px}
+.hero{background:linear-gradient(115deg,#151515,#292929);color:#fff;padding:100px 0 90px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:900}
+.hero h1{font-size:clamp(50px,8vw,88px);line-height:.95;text-transform:uppercase;margin:14px 0}.hero h2{font-size:clamp(21px,3vw,31px);line-height:1.2}.hero p{max-width:740px;color:#d5d5d5;font-size:18px}
+.btn{display:inline-block;text-decoration:none;font-weight:900;padding:13px 21px;margin:10px 10px 0 0}.primary{background:var(--yellow);color:#151515}.outline{border:1px solid #777;color:#fff}
+section{padding:78px 0}.light{background:var(--light)}h2{font-size:42px;line-height:1.05;margin:7px 0 25px;text-transform:uppercase}.intro{max-width:760px;color:var(--muted)}
+.two{display:grid;grid-template-columns:1.25fr .75fr;gap:55px}.check{margin:12px 0;font-weight:700}.check:before{content:"✓";display:inline-grid;place-items:center;width:23px;height:23px;background:var(--yellow);border-radius:50%;margin-right:10px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{border:1px solid var(--line);background:#fff}.project-photo{height:245px;background:#e8e8e5;display:grid;place-items:center;text-align:center;padding:25px;color:#777}.project-photo b{display:block;color:#444;font-size:19px;margin-bottom:5px}.project-body{padding:23px}.project-body h3{font-size:25px;margin:0 0 8px}.project-body p{color:#555}.tag{display:inline-block;background:#151515;color:#fff;font-size:11px;font-weight:900;padding:4px 8px;margin:3px 4px 0 0}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skill{background:#fff;border-left:4px solid var(--yellow);padding:20px}.skill h3{margin:0 0 8px}.skill p{margin:0;color:#555}
+.cred{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:28px}.cred div{background:#fff;border:1px solid var(--line);padding:18px}.cred strong{display:block}.cred span{color:#666;font-size:14px}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;padding:24px;border:1px solid var(--line)}.num{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--yellow);font-weight:900}.step h3{margin:10px 0 5px}
+.contact{background:var(--dark);color:#fff}.contact p{color:#ccc}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.item{border-top:1px solid #444;padding:18px 0}.item small{display:block;color:#999;text-transform:uppercase;font-weight:900}.item a{color:#fff;text-decoration:none;font-size:18px}
+footer{background:#0e0e0e;color:#888;text-align:center;padding:25px;font-size:13px}.note{color:#777;font-size:13px;margin-top:20px}
+@media(max-width:780px){nav a{margin-left:8px;font-size:10px}.two,.grid,.skills,.contactgrid,.how,.cred{grid-template-columns:1fr}.hero{padding:75px 0}section{padding:58px 0}h2{font-size:35px}}
 </style>
 </head>
 <body>
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="logo" href="#home">EKAM <span>RAI</span></a>
-    <nav>
-      <a href="#about">ABOUT</a><a href="#work">MY WORK</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a>
-    </nav>
-  </div>
-</header>
+<header class="top"><div class="wrap"><a class="logo" href="#home">EKAM <span>RAI</span></a>
+<nav><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></nav></div></header>
 
-<main>
-<section class="hero" id="home">
-  <div class="container">
-    <div class="eyebrow">Construction Portfolio</div>
-    <h1>Ekam Rai</h1>
-    <h2>Drywall Installer &amp; Finisher<br>Construction Worker</h2>
-    <p>Hands-on construction work with a focus on drywall installation, finishing, renovation, repairs, clean workmanship and safe work practices.</p>
-    <div class="buttons">
-      <a class="btn btn-primary" href="#work">VIEW MY WORK</a>
-      <a class="btn btn-outline" href="#contact">CONTACT ME</a>
-    </div>
-  </div>
-</section>
+<section class="hero" id="home"><div class="wrap">
+<div class="eyebrow">Construction Portfolio</div>
+<h1>Ekam Rai</h1><h2>Drywall Installer &amp; Finisher<br>Construction Worker</h2>
+<p>Skilled construction and renovation worker with hands-on experience since 2022 across residential renovations, new construction and commercial projects. Focused on quality workmanship, safety and clean project completion.</p>
+<a class="btn primary" href="#work">VIEW MY WORK</a><a class="btn outline" href="#contact">CONTACT ME</a>
+</div></section>
 
-<section id="about" class="about">
-  <div class="container about-grid">
-    <div>
-      <div class="section-head">
-        <div class="eyebrow">About Me</div>
-        <h2>Built on hard work.</h2>
-      </div>
-      <p>I am a hardworking and safety-conscious construction worker with practical experience in drywall installation, finishing, renovation, repairs and general construction work.</p>
-      <p>I take pride in clean workmanship, attention to detail, maintaining a safe work area and completing tasks properly. I am comfortable working independently or as part of a construction team and am always willing to learn and improve.</p>
-    </div>
-    <div>
-      <div class="check"><b>Reliable and hardworking</b></div>
-      <div class="check"><b>Safety-focused</b></div>
-      <div class="check"><b>Attention to detail</b></div>
-      <div class="check"><b>Comfortable with physical work</b></div>
-      <div class="check"><b>Hand &amp; power tool experience</b></div>
-      <div class="check"><b>Team-oriented and willing to learn</b></div>
-    </div>
-  </div>
-</section>
+<section id="about" class="light"><div class="wrap two"><div>
+<div class="eyebrow">About Me</div><h2>Built on hard work.</h2>
+<p>I am a skilled construction and renovation worker with hands-on experience across residential renovations, new construction and commercial projects. My experience covers work from initial layout and framing through drywall, flooring, trim and final finishing.</p>
+<p>I can read and interpret blueprints and construction drawings, complete detailed tasks independently and work effectively with a construction team. I take pride in safe work practices, attention to detail, clean job sites and quality results.</p>
+</div><div>
+<div class="check">Reliable and hardworking</div><div class="check">Safety-focused</div><div class="check">Strong attention to detail</div><div class="check">Blueprint &amp; construction drawing reading</div><div class="check">Hand &amp; power tool experience</div><div class="check">Team-oriented and willing to learn</div><div class="check">Open to construction opportunities in New Brunswick</div>
+</div></div></section>
 
-<section id="work">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Portfolio</div>
-      <h2>My Work</h2>
-      <p>Your project photos and videos can be added here later. Each project is designed to show the work from start to finish.</p>
-    </div>
-    <div class="grid projects">
-      <article class="project">
-        <div class="project-media"><div class="placeholder"><strong>ADD PROJECT PHOTOS</strong>Drywall installation photos<br>Before • During • After</div></div>
-        <div class="project-body"><h3>Drywall Installation</h3><p>Measuring, cutting, positioning and securing drywall for interior construction and renovation work.</p><span class="tag">Drywall</span><span class="tag">Installation</span></div>
-      </article>
-      <article class="project">
-        <div class="project-media"><div class="placeholder"><strong>ADD PROJECT PHOTOS</strong>Taping &amp; finishing photos<br>Before • During • After</div></div>
-        <div class="project-body"><h3>Drywall Finishing</h3><p>Joint taping, compound application, corner work, sanding and surface preparation for a clean finished result.</p><span class="tag">Taping</span><span class="tag">Mudding</span><span class="tag">Finishing</span></div>
-      </article>
-      <article class="project">
-        <div class="project-media"><div class="placeholder"><strong>ADD PROJECT PHOTOS</strong>Framing photos<br>Before • During • After</div></div>
-        <div class="project-body"><h3>Framing</h3><p>Interior framing and layout work, including measuring, cutting and installation.</p><span class="tag">Framing</span><span class="tag">Layout</span></div>
-      </article>
-      <article class="project">
-        <div class="project-media"><div class="placeholder"><strong>ADD PROJECT PHOTOS / VIDEO</strong>Renovation &amp; repair work<br>Before • During • After</div></div>
-        <div class="project-body"><h3>Renovation &amp; Repair</h3><p>Hands-on renovation, repair, surface preparation and general construction work.</p><span class="tag">Renovation</span><span class="tag">Repair</span></div>
-      </article>
-    </div>
-    <p class="note">Tip: Replace the placeholders with your own photos and short project videos. Use Before → During → After whenever possible.</p>
-  </div>
-</section>
+<section id="work"><div class="wrap"><div class="eyebrow">Portfolio</div><h2>My Work</h2>
+<p class="intro">Your real project photos and videos will go into these sections. For each project, show <b>Before → During → After</b> whenever possible.</p>
+<div class="grid">
+<article class="project"><div class="project-photo"><div><b>ADD DRYWALL PHOTOS</b>Before • During • After<br>Replace this area with your project photos.</div></div><div class="project-body"><h3>Drywall Installation</h3><p>Measuring, cutting, positioning and fastening drywall for interior construction and renovation projects.</p><span class="tag">Drywall</span><span class="tag">Installation</span></div></article>
+<article class="project"><div class="project-photo"><div><b>ADD FINISHING PHOTOS / VIDEO</b>Taping • Mudding • Sanding<br>Show your finishing process and final result.</div></div><div class="project-body"><h3>Drywall Finishing</h3><p>Taping, joint compound, corner beads, sanding, repairs and surface preparation for painting and tile.</p><span class="tag">Taping</span><span class="tag">Mudding</span><span class="tag">Finishing</span></div></article>
+<article class="project"><div class="project-photo"><div><b>ADD FRAMING PHOTOS</b>Wood • Metal • Layout<br>Show framing before drywall is installed.</div></div><div class="project-body"><h3>Wood &amp; Metal Framing</h3><p>Construction layouts, wall and opening layouts, wood and metal stud framing and structural support work.</p><span class="tag">Framing</span><span class="tag">Layout</span></div></article>
+<article class="project"><div class="project-photo"><div><b>ADD RENOVATION PHOTOS / VIDEO</b>Before • During • After<br>Show the transformation from start to finish.</div></div><div class="project-body"><h3>Renovation &amp; Repair</h3><p>Bathroom and kitchen remodeling, flooring, doors, trim, painting, accent walls, repairs and final touch-ups.</p><span class="tag">Renovation</span><span class="tag">Repair</span></div></article>
+</div></div></section>
 
-<section id="skills" class="about">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">What I Can Do</div>
-      <h2>Skills &amp; Qualifications</h2>
-    </div>
-    <div class="skills">
-      <div class="skillbox"><h3>Drywall</h3><div>Installation • Measuring &amp; cutting • Fastening • Taping • Joint compound • Corner bead • Sanding • Finishing</div></div>
-      <div class="skillbox"><h3>General Construction</h3><div>Interior framing • Renovation • Repairs • Material handling • Site cleanup • Measuring &amp; layout</div></div>
-      <div class="skillbox"><h3>Hand Tools</h3><div>Tape measure • Utility knife • Drywall knives • Mud pan • Level • T-square • Chalk line • Hammer • Chisel • Wrenches • Pliers</div></div>
-      <div class="skillbox"><h3>Work Approach</h3><div>Safe work practices • Attention to detail • Clean work area • Teamwork • Following instructions • Willingness to learn</div></div>
-    </div>
-    <div style="margin-top:40px">
-      <div class="cert"><div class="cert-icon">✓</div><div><h3>WHMIS</h3><p>Certificate</p></div></div>
-      <div class="cert"><div class="cert-icon">✓</div><div><h3>Working at Heights</h3><p>Training</p></div></div>
-      <div class="cert"><div class="cert-icon">AZ</div><div><h3>AZ Driver's Licence</h3><p>Valid</p></div></div>
-    </div>
-  </div>
-</section>
+<section id="skills" class="light"><div class="wrap"><div class="eyebrow">What I Can Do</div><h2>Skills &amp; Qualifications</h2>
+<div class="skills">
+<div class="skill"><h3>Drywall</h3><p>Installation • Measuring &amp; cutting • Fastening • Taping &amp; mudding • Joint compound • Corner bead • Sanding • Repairs &amp; patching • Wall &amp; ceiling finishing</p></div>
+<div class="skill"><h3>Framing &amp; Construction</h3><p>Wood &amp; metal framing • Construction layout • Blueprint reading • Window installation • Structural supports • Insulation • Fire separation</p></div>
+<div class="skill"><h3>Flooring &amp; Trim</h3><p>Hardwood • Laminate • Vinyl flooring • Doors • Trim • Baseboards • Painting • Accent walls • Final touch-ups</p></div>
+<div class="skill"><h3>Renovation</h3><p>Residential renovations • Bathroom remodeling • Kitchen remodeling • Interior repairs • Surface preparation • Project cleanup</p></div>
+</div>
+<div class="cred"><div><strong>WHMIS</strong><span>Certificate</span></div><div><strong>Working at Heights</strong><span>Training</span></div><div><strong>AZ Driver’s Licence</strong><span>Valid</span></div><div><strong>Languages</strong><span>English • Punjabi • Hindi</span></div></div>
+</div></section>
 
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="section-head">
-      <div class="eyebrow">Get In Touch</div>
-      <h2>Let's Work Together</h2>
-      <p>If you are looking for a reliable construction worker, drywall installer or drywall finisher, I would be happy to discuss opportunities.</p>
-    </div>
-    <div class="contact-box">
-      <div>
-        <div class="contact-item"><small>Email</small><a href="mailto:ekamdeeprai123@gmail.com">ekamdeeprai123@gmail.com</a></div>
-        <div class="contact-item"><small>Phone</small><a href="tel:+16479893055">647-989-3055</a></div>
-        <div class="contact-item"><small>Location</small><span>New Brunswick, Canada</span></div>
-      </div>
-      <div>
-        <div class="contact-item"><small>Resume</small><a href="Ekam-Rai-Resume.pdf" target="_blank">View / Download Resume →</a></div>
-        <p>Replace the email, phone number and resume link with your own details before publishing.</p>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
+<section><div class="wrap"><div class="eyebrow">Portfolio Strategy</div><h2>Show the Work.</h2>
+<div class="how"><div class="step"><div class="num">01</div><h3>Upload Photos</h3><p>Add your best construction photos to each project category.</p></div>
+<div class="step"><div class="num">02</div><h3>Add Videos</h3><p>Add short videos showing your process, tools or finished work.</p></div>
+<div class="step"><div class="num">03</div><h3>Share With Employers</h3><p>Put this website on your resume and job applications.</p></div></div>
+</div></section>
 
+<section id="contact" class="contact"><div class="wrap"><div class="eyebrow">Get In Touch</div><h2>Let’s Work Together</h2>
+<p>If you are looking for a reliable construction worker, drywall installer or drywall finisher, I would be happy to discuss opportunities.</p>
+<div class="contactgrid"><div>
+<div class="item"><small>Email</small><a href="mailto:ekamdeeprai123@gmail.com">ekamdeeprai123@gmail.com</a></div>
+<div class="item"><small>Phone</small><a href="tel:+16479893055">647-989-3055</a></div>
+<div class="item"><small>Location</small>New Brunswick, Canada</div></div>
+<div><div class="item"><small>Resume</small><a href="Ekam-Rai-Resume.pdf">View / Download My Resume →</a></div>
+<div class="item"><small>Availability</small>Open to construction opportunities in New Brunswick</div></div></div></div></section>
 <footer>© 2026 Ekam Rai • Construction Portfolio</footer>
-</body>
-</html>
+</body></html>
