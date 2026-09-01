@@ -108,6 +108,62 @@ h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:8px 0 0;letter-spacing:-2
  .card h3{font-size:15px}
  .hero-image{min-height:340px}
 }
+
+/* V4 visual refinements */
+.hero {
+  grid-template-columns: 1fr !important;
+  min-height: 610px !important;
+  background:
+    linear-gradient(90deg, rgba(7,7,7,.98) 0%, rgba(7,7,7,.94) 55%, rgba(7,7,7,.82) 100%);
+  color: #fff;
+}
+.hero-copy {
+  max-width: 1180px;
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  padding: 95px 20px 90px !important;
+}
+.hero-copy .eyebrow { color: var(--yellow); }
+.hero-copy p { color: #eee; }
+.hero-title { color: var(--yellow); }
+.hero-sub { color: #fff; }
+.hero-image { display: none !important; }
+.hero h1 { color: #fff; }
+.hero .cta.alt { color:#fff; border-color:var(--yellow); }
+
+.qual-grid { grid-template-columns: repeat(3,1fr); }
+.qual { background: #0b0b0b; color:#fff; border:0; text-align:center; }
+.qual strong { color:var(--yellow); }
+.qual span { color:#ddd; }
+
+.section.black { background:#080808; }
+.skills-grid { grid-template-columns: repeat(3,1fr); background:#1f1f1f; }
+.skill { background:#080808; border:1px solid #242424; }
+.skill h3 { color:var(--yellow); }
+
+.gallery { grid-template-columns: repeat(5,1fr); gap:4px; }
+.card { background:#111; border:0; }
+.card button { cursor:zoom-in; }
+.card img {
+  aspect-ratio: 1.35 / 1;
+  object-fit: cover;
+  display:block;
+}
+.card-body { display:none !important; }
+
+#work .section-head { margin-bottom:22px; }
+#work .lead { display:none; }
+
+@media(max-width:900px){
+  .gallery { grid-template-columns: repeat(3,1fr); gap:4px; }
+  .skills-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:600px){
+  .hero-copy { padding:75px 20px 70px !important; }
+  .gallery { grid-template-columns: repeat(2,1fr); }
+  .skills-grid, .qual-grid { grid-template-columns:1fr; }
+}
+
 </style>
 </head>
 <body>
@@ -144,9 +200,6 @@ h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:8px 0 0;letter-spacing:-2
       <a class="cta" href="#contact">CONTACT ME</a>
       <a class="cta alt" href="#work">VIEW MY WORK</a>
     </div>
-  </div>
-  <div class="hero-image">
-    <img src="work-15.jpg" alt="Completed interior construction work">
   </div>
 </section>
 
@@ -198,8 +251,7 @@ h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:8px 0 0;letter-spacing:-2
     <div class="gallery">
       <div class="card"><button onclick="openModal('work-01.jpg','Interior Renovation')"><img src="work-01.jpg" alt="Interior Renovation" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Interior Renovation</h3></div></button></div><div class="card"><button onclick="openModal('work-02.jpg','Flooring Installation')"><img src="work-02.jpg" alt="Flooring Installation" loading="lazy"><div class="card-body"><div class="tag">Flooring & Trim</div><h3>Flooring Installation</h3></div></button></div><div class="card"><button onclick="openModal('work-03.jpg','Finished Interior')"><img src="work-03.jpg" alt="Finished Interior" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Finished Interior</h3></div></button></div><div class="card"><button onclick="openModal('work-04.jpg','Feature Wall')"><img src="work-04.jpg" alt="Feature Wall" loading="lazy"><div class="card-body"><div class="tag">Drywall & Finishing</div><h3>Feature Wall</h3></div></button></div><div class="card"><button onclick="openModal('work-05.jpg','Interior Finish')"><img src="work-05.jpg" alt="Interior Finish" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Interior Finish</h3></div></button></div><div class="card"><button onclick="openModal('work-06.jpg','Feature Wall Detail')"><img src="work-06.jpg" alt="Feature Wall Detail" loading="lazy"><div class="card-body"><div class="tag">Drywall & Finishing</div><h3>Feature Wall Detail</h3></div></button></div><div class="card"><button onclick="openModal('work-07.jpg','Bathroom Renovation')"><img src="work-07.jpg" alt="Bathroom Renovation" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Bathroom Renovation</h3></div></button></div><div class="card"><button onclick="openModal('work-08.jpg','Bathroom Finish')"><img src="work-08.jpg" alt="Bathroom Finish" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Bathroom Finish</h3></div></button></div><div class="card"><button onclick="openModal('work-09.jpg','Finished Room')"><img src="work-09.jpg" alt="Finished Room" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Finished Room</h3></div></button></div><div class="card"><button onclick="openModal('work-10.jpg','Interior Renovation')"><img src="work-10.jpg" alt="Interior Renovation" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Interior Renovation</h3></div></button></div><div class="card"><button onclick="openModal('work-11.jpg','Flooring Work')"><img src="work-11.jpg" alt="Flooring Work" loading="lazy"><div class="card-body"><div class="tag">Flooring & Trim</div><h3>Flooring Work</h3></div></button></div><div class="card"><button onclick="openModal('work-12.jpg','Kitchen & Flooring')"><img src="work-12.jpg" alt="Kitchen & Flooring" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Kitchen & Flooring</h3></div></button></div><div class="card"><button onclick="openModal('work-13.jpg','Flooring Finish')"><img src="work-13.jpg" alt="Flooring Finish" loading="lazy"><div class="card-body"><div class="tag">Flooring & Trim</div><h3>Flooring Finish</h3></div></button></div><div class="card"><button onclick="openModal('work-14.jpg','Stair & Flooring')"><img src="work-14.jpg" alt="Stair & Flooring" loading="lazy"><div class="card-body"><div class="tag">Flooring & Trim</div><h3>Stair & Flooring</h3></div></button></div><div class="card"><button onclick="openModal('work-15.jpg','Completed Interior')"><img src="work-15.jpg" alt="Completed Interior" loading="lazy"><div class="card-body"><div class="tag">Renovation & Repair</div><h3>Completed Interior</h3></div></button></div>
     </div>
-    <p style="margin:28px 0 0;color:#777;font-size:13px"><strong>Photo note:</strong> These gallery images were extracted from the screen recording you supplied. Replace them with the original full-resolution photos for the final published portfolio.</p>
-  </div>
+</div>
 </section>
 
 <section class="section">
